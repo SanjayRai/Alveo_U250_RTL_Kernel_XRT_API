@@ -1,0 +1,2 @@
+source /home/applications/SDx/2019.1/settings64.sh
+sdx_debug_hw --vivado --host localhost --ltx_file ./xclbin/vadd.hw.xilinx_u250_xdma_201830_2.ltx

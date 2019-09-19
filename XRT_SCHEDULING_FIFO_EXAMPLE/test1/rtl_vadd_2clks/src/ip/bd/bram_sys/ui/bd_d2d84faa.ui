@@ -1,0 +1,55 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port M_AXI -pg 1 -lvl 4 -x 1410 -y 790 -defaultsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 220 -defaultsOSRD
+preplace port s_axi_aclk -pg 1 -lvl 0 -x 0 -y 240 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 260 -defaultsOSRD
+preplace portBus srai_side_band_ctrl -pg 1 -lvl 4 -x 1410 -y 1040 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 2 -x 870 -y 720 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 3 -x 1260 -y 720 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 2 -x 870 -y 890 -defaultsOSRD
+preplace inst axi_gpio_1 -pg 1 -lvl 2 -x 870 -y 570 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 1 -x 260 -y 340 -defaultsOSRD
+preplace inst fifo_generator_0 -pg 1 -lvl 2 -x 870 -y 250 -defaultsOSRD
+preplace inst krnl_wr_axi_lite_cmd -pg 1 -lvl 1 -x 260 -y 710 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 1 -x 260 -y 890 -defaultsOSRD
+preplace inst system_ila_1 -pg 1 -lvl 3 -x 1260 -y 960 -defaultsOSRD
+preplace netloc M00_AXI_arready_1 1 1 1 530 120n
+preplace netloc M00_AXI_awready_1 1 1 1 510 200n
+preplace netloc M00_AXI_bresp_1 1 1 1 480 310n
+preplace netloc M00_AXI_bvalid_1 1 1 1 470 330n
+preplace netloc M00_AXI_rdata_1 1 1 1 570 260n
+preplace netloc M00_AXI_rresp_1 1 1 1 600 300n
+preplace netloc M00_AXI_rvalid_1 1 1 1 620 320n
+preplace netloc M00_AXI_wready_1 1 0 2 50 50 580
+preplace netloc axi_gpio_0_gpio_io_o 1 2 2 1110 1040 NJ
+preplace netloc axi_interconnect_0_M00_AXI_araddr 1 1 1 490 80n
+preplace netloc axi_interconnect_0_M00_AXI_arprot 1 1 1 500 100n
+preplace netloc axi_interconnect_0_M00_AXI_arvalid 1 1 1 540 140n
+preplace netloc axi_interconnect_0_M00_AXI_awaddr 1 1 1 620 150n
+preplace netloc axi_interconnect_0_M00_AXI_awprot 1 1 1 570 170n
+preplace netloc axi_interconnect_0_M00_AXI_awvalid 1 1 1 570 190n
+preplace netloc axi_interconnect_0_M00_AXI_rready 1 1 1 610 280n
+preplace netloc axi_interconnect_0_M00_AXI_wdata 1 1 1 550 230n
+preplace netloc axi_interconnect_0_M00_AXI_wstrb 1 1 1 510 250n
+preplace netloc axi_interconnect_0_M00_AXI_wvalid 1 0 2 60 60 460
+preplace netloc fifo_generator_0_axi_aw_data_count 1 2 1 1120 250n
+preplace netloc fifo_generator_0_axi_w_data_count 1 2 1 1110 270n
+preplace netloc krnl_wr_axi_lite_cmd_1_BREADY 1 1 1 590 240n
+preplace netloc s_axi_aclk_0_1 1 0 3 40 70 520 800 1120
+preplace netloc s_axi_aresetn_0_1 1 0 3 20 40 560 980 NJ
+preplace netloc S_AXI_1 1 0 1 30 220n
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 2 1 N 710
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 2 1 N 730
+preplace netloc axi_interconnect_0_M00_AXI 1 1 1 470 60n
+preplace netloc axi_interconnect_0_M01_AXI 1 1 1 500 510n
+preplace netloc axi_interconnect_0_M02_AXI 1 1 1 490 530n
+preplace netloc axi_interconnect_0_M03_AXI 1 1 1 N 550
+preplace netloc fifo_generator_0_M_AXI 1 2 2 1130 790 NJ
+levelinfo -pg 1 0 260 870 1260 1410
+pagesize -pg 1 -db -bbox -sgen -150 0 1640 1060
+"
+}
+

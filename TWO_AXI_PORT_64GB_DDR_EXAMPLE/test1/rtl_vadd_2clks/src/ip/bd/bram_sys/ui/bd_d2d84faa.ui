@@ -1,0 +1,27 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x -40 -y 60 -defaultsOSRD
+preplace port M_AXI -pg 1 -lvl 3 -x 620 -y 130 -defaultsOSRD
+preplace port s_axi_aclk -pg 1 -lvl 0 -x -40 -y 80 -defaultsOSRD
+preplace port s_axi_aresetn -pg 1 -lvl 0 -x -40 -y 100 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 1 -x 140 -y 330 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 2 -x 450 -y 330 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 450 -y 140 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 1 -x 140 -y 170 -defaultsOSRD
+preplace netloc s_axi_aclk_0_1 1 0 2 -20 250 290J
+preplace netloc s_axi_aresetn_0_1 1 0 2 -10 90 280J
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 N 130
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 1 1 N 320
+preplace netloc axi_bram_ctrl_0_BRAM_PORTB 1 1 1 N 340
+preplace netloc axi_interconnect_0_M01_AXI 1 0 3 0 410 NJ 410 600
+preplace netloc S_AXI_1 1 0 2 0J 60 NJ
+levelinfo -pg 1 -40 140 450 620
+pagesize -pg 1 -db -bbox -sgen -190 0 720 790
+"
+}
+{
+   "da_bram_cntlr_cnt":"2",
+   "da_clkrst_cnt":"3"
+}

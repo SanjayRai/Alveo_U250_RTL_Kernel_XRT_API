@@ -1,0 +1,495 @@
+
+*** Running vivado
+    with args -log bram_sys_axi_bram_ctrl_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bram_sys_axi_bram_ctrl_0_0.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source bram_sys_axi_bram_ctrl_0_0.tcl -notrace
+Command: synth_design -top bram_sys_axi_bram_ctrl_0_0 -part xcu250-figd2104-2L-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcu250'
+INFO: [Device 21-403] Loading part xcu250-figd2104-2L-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16169 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2624.234 ; gain = 108.715 ; free physical = 35853 ; free virtual = 86773
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bram_sys_axi_bram_ctrl_0_0' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ip/bram_sys_axi_bram_ctrl_0_0/synth/bram_sys_axi_bram_ctrl_0_0.vhd:99]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'axi_bram_ctrl' declared at '/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31356' bound to instance 'U0' of component 'axi_bram_ctrl' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ip/bram_sys_axi_bram_ctrl_0_0/synth/bram_sys_axi_bram_ctrl_0_0.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31527]
+	Parameter C_BRAM_INST_MODE bound to: EXTERNAL - type: string 
+	Parameter C_MEMORY_DEPTH bound to: 4096 - type: integer 
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_bram_ctrl_top' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30526]
+	Parameter C_BRAM_ADDR_WIDTH bound to: 12 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_SUPPORTS_NARROW_BURST bound to: 0 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: virtexuplus - type: string 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'axi_lite' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
+	Parameter C_S_AXI_PROTOCOL bound to: AXI4LITE - type: string 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 14 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_SINGLE_PORT_BRAM bound to: 0 - type: integer 
+	Parameter C_S_AXI_CTRL_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_CTRL_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_READ_LATENCY bound to: 1 - type: integer 
+	Parameter C_RD_CMD_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_ECC bound to: 0 - type: integer 
+	Parameter C_ECC_TYPE bound to: 0 - type: integer 
+	Parameter C_ECC_WIDTH bound to: 0 - type: integer 
+	Parameter C_FAULT_INJECT bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_RESET_VALUE bound to: 0 - type: integer 
+	Parameter C_ENABLE_AXI_CTRL_REG_IF bound to: 0 - type: integer 
+	Parameter C_CE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_UE_FAILING_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_STATUS_REGISTERS bound to: 0 - type: integer 
+	Parameter C_ECC_ONOFF_REGISTER bound to: 0 - type: integer 
+	Parameter C_CE_COUNTER_WIDTH bound to: 0 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_arready_reg_reg was removed.  [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8429]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rvalid_set_r_reg was removed.  [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8430]
+WARNING: [Synth 8-6014] Unused sequential element GEN_NO_RD_CMD_OPT.axi_rlast_set_r_reg was removed.  [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:8431]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite' (1#1) [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:6841]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl_top' (2#1) [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:30526]
+INFO: [Synth 8-256] done synthesizing module 'axi_bram_ctrl' (3#1) [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:31527]
+INFO: [Synth 8-256] done synthesizing module 'bram_sys_axi_bram_ctrl_0_0' (4#1) [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ip/bram_sys_axi_bram_ctrl_0_0/synth/bram_sys_axi_bram_ctrl_0_0.vhd:99]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_AWADDR[1]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_AWADDR[0]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_ARADDR[1]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_ARADDR[0]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWVALID
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[31]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[30]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[29]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[28]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[27]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[26]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[25]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[24]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[23]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[22]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[21]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[20]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[19]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[18]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[17]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[16]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[15]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[14]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[13]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[12]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[11]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[10]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[9]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[8]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[7]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[6]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[5]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[4]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[3]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[2]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[1]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_AWADDR[0]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[31]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[30]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[29]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[28]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[27]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[26]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[25]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[24]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[23]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[22]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[21]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[20]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[19]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[18]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[17]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[16]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[15]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[14]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[13]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[12]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[11]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[10]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[9]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[8]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[7]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[6]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[5]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[4]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[3]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[2]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[1]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WDATA[0]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_WVALID
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_BREADY
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[31]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[30]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[29]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[28]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[27]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[26]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[25]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[24]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[23]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[22]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[21]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[20]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[19]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[18]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[17]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[16]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[15]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[14]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[13]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[12]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[11]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[10]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[9]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[8]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[7]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[6]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[5]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[4]
+WARNING: [Synth 8-3331] design axi_lite has unconnected port AXI_CTRL_ARADDR[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2685.957 ; gain = 170.438 ; free physical = 35775 ; free virtual = 86696
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2691.891 ; gain = 176.371 ; free physical = 35772 ; free virtual = 86693
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2691.891 ; gain = 176.371 ; free physical = 35773 ; free virtual = 86694
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ip/bram_sys_axi_bram_ctrl_0_0/bram_sys_axi_bram_ctrl_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ip/bram_sys_axi_bram_ctrl_0_0/bram_sys_axi_bram_ctrl_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.runs/bram_sys_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.runs/bram_sys_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.383 ; gain = 0.000 ; free physical = 35665 ; free virtual = 86590
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2892.352 ; gain = 2.969 ; free physical = 35665 ; free virtual = 86589
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2892.352 ; gain = 376.832 ; free physical = 35772 ; free virtual = 86697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcu250-figd2104-2L-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2892.352 ; gain = 376.832 ; free physical = 35772 ; free virtual = 86697
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.runs/bram_sys_axi_bram_ctrl_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2892.352 ; gain = 376.832 ; free physical = 35775 ; free virtual = 86699
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rlast_int_reg' into 'GEN_NO_RD_CMD_OPT.GEN_R.axi_rvalid_int_reg' [/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/ipshared/70bf/hdl/axi_bram_ctrl_v4_1_rfs.vhd:7279]
+INFO: [Synth 8-802] inferred FSM for state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' in module 'axi_lite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                              000
+             sng_wr_data |                               01 |                              011
+                 rd_data |                               10 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'GEN_NO_RD_CMD_OPT.lite_sm_cs_reg' using encoding 'sequential' in module 'axi_lite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 2892.352 ; gain = 376.832 ; free physical = 35756 ; free virtual = 86681
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_lite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 4     
+Module axi_bram_ctrl_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 12288 (col length:96)
+BRAMs: 5376 (col length: RAMB18 384 RAMB36 192)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 2892.352 ; gain = 376.832 ; free physical = 35719 ; free virtual = 86646
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 3171.914 ; gain = 656.395 ; free physical = 36049 ; free virtual = 86977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 3191.941 ; gain = 676.422 ; free physical = 36080 ; free virtual = 87008
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:58 . Memory (MB): peak = 3192.949 ; gain = 677.430 ; free physical = 36077 ; free virtual = 87005
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36003 ; free virtual = 86932
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36003 ; free virtual = 86932
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36002 ; free virtual = 86930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36002 ; free virtual = 86930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36002 ; free virtual = 86930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36002 ; free virtual = 86930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     2|
+|3     |LUT3 |     1|
+|4     |LUT4 |     3|
+|5     |LUT5 |     7|
+|6     |LUT6 |     7|
+|7     |FDRE |    13|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------+------+
+|      |Instance                         |Module            |Cells |
++------+---------------------------------+------------------+------+
+|1     |top                              |                  |    35|
+|2     |  U0                             |axi_bram_ctrl     |    35|
+|3     |    \gext_inst.abcv4_0_ext_inst  |axi_bram_ctrl_top |    35|
+|4     |      \GEN_AXI4LITE.I_AXI_LITE   |axi_lite          |    33|
++------+---------------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.891 ; gain = 683.371 ; free physical = 36002 ; free virtual = 86930
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 180 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:53 . Memory (MB): peak = 3198.891 ; gain = 482.910 ; free physical = 36035 ; free virtual = 86963
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:59 . Memory (MB): peak = 3198.895 ; gain = 683.371 ; free physical = 36035 ; free virtual = 86963
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3312.555 ; gain = 0.000 ; free physical = 36015 ; free virtual = 86944
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:01:30 . Memory (MB): peak = 3312.555 ; gain = 1789.988 ; free physical = 36111 ; free virtual = 87040
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3312.555 ; gain = 0.000 ; free physical = 36111 ; free virtual = 87040
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.runs/bram_sys_axi_bram_ctrl_0_0_synth_1/bram_sys_axi_bram_ctrl_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bram_sys_axi_bram_ctrl_0_0, cache-ID = 5fde5284d00af159
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3336.570 ; gain = 0.000 ; free physical = 36179 ; free virtual = 87108
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.runs/bram_sys_axi_bram_ctrl_0_0_synth_1/bram_sys_axi_bram_ctrl_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bram_sys_axi_bram_ctrl_0_0_utilization_synth.rpt -pb bram_sys_axi_bram_ctrl_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  2 14:16:06 2019...

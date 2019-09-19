@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Aug  2 14:12:58 2019
+# Process ID: 15217
+# Current directory: /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj
+# Command line: vivado -source vivado_project.tcl
+# Log file: /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/vivado.log
+# Journal file: /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source vivado_project.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+source ./create_bram_sys.tcl
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/bram_sys.bd]
+catch { config_ip_cache -export [get_ips -all bram_sys_axi_bram_ctrl_0_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_axi_bram_ctrl_0_bram_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_axi_gpio_0_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_axi_gpio_1_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_xbar_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_m00_regslice_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_fifo_generator_0_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_system_ila_0_0] }
+catch { config_ip_cache -export [get_ips -all bram_sys_system_ila_1_0] }
+export_ip_user_files -of_objects [get_files /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/bram_sys.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/bram_sys.bd]
+launch_runs -jobs 4 {bram_sys_axi_bram_ctrl_0_0_synth_1 bram_sys_axi_bram_ctrl_0_bram_0_synth_1 bram_sys_axi_gpio_0_0_synth_1 bram_sys_axi_gpio_1_0_synth_1 bram_sys_xbar_0_synth_1 bram_sys_m00_regslice_0_synth_1 bram_sys_fifo_generator_0_0_synth_1 bram_sys_krnl_wr_axi_lite_cmd_0_synth_1 bram_sys_system_ila_0_0_synth_1 bram_sys_system_ila_1_0_synth_1}
+export_simulation -of_objects [get_files /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/bd/bram_sys/bram_sys.bd] -directory /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.ip_user_files/sim_scripts -ip_user_files_dir /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.ip_user_files -ipstatic_source_dir /home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/modelsim} {questa=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/questa} {ies=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/ies} {xcelium=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/xcelium} {vcs=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/vcs} {riviera=/home/sanjayr/projects/U250/RTL_KERNEL_STREAMING_MSFT/t4_RTL_KER_immedeate_DONE_AXIL_FIFO_SW_START_STOP_SYS_ILA/test1/rtl_vadd_2clks/src/ip/vivado_prj/project_X/project.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
